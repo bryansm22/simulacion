@@ -2,14 +2,14 @@
                         General Data File
 ==================================================================
 Units:
-length *Units(length) mass *Units(mass)
 Number of elements and nodes:
-*nelem *npoin
+elements pointnumber timedelta
+*nelem *npoin 
 
 .................................................................
 
 Coordinates:
-Node        X *Units(length)        Y *Units(length)        Z *Units(length)
+Node        	X      		Y       		Z
 *set elems(all)
 *loop nodes
 *NodesNum *NodesCoord(1) *NodesCoord(2) *NodesCoord(3)
@@ -27,7 +27,7 @@ Element    Node(1)   Node(2)   Node(3)  Node(4)    Material
 
 Materials:
 *nmats
-Material      Surface density *Units(surface_density)
+Material 
 *loop materials
 *MatNum *MatProp(Superficial_density,real)
 *end materials
@@ -37,7 +37,7 @@ Material      Surface density *Units(surface_density)
 *Set Cond Velocidad-Entrada *nodes
 Velocidad de Entrada:
 *CondNumEntities(int)
-Node   Mass *Units(mass)
+Node   Mass
 *loop nodes *OnlyInCond
-*NodesNum     *Cond(Weight)
+*NodesNum
 *end nodes

@@ -1,18 +1,18 @@
 CONDITION: No-Slip
 CONDTYPE: over surfaces
-CONDMESHTYPE: over elems
-QUESTION: Weight
-VALUE: 0
+CONDMESHTYPE: over nodes
 END CONDITION
+
 CONDITION: Velocidad-Entrada
 CONDTYPE: over surfaces
-CONDMESHTYPE: over elems
+CONDMESHTYPE: over nodes
 QUESTION: Velocidad
 VALUE: 166.192
 END CONDITION
+
 CONDITION: Presion-Salida
 CONDTYPE: over surfaces
-CONDMESHTYPE: over elems
+CONDMESHTYPE: over nodes
 QUESTION: Presion
 VALUE: 0
 END CONDITION
