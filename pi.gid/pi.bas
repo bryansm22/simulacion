@@ -4,7 +4,7 @@
 Units:
 Number of elements and nodes:
 elements pointnumber timedelta
-*nelem *npoin 
+*nelem *nnodes
 
 .................................................................
 
